@@ -1,0 +1,62 @@
+.uno_dos {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.tres_seis {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tres,
+.cuatro,
+.cinco,
+.seis {
+    width: 50%;
+}
+
+.uno {
+    flex: 1;
+    background-color: rgb(174, 255, 187);
+}
+
+.dos {
+    flex: 1;
+    background-color: rgb(244, 253, 174);
+}
+
+.tres {
+    background-color: rgb(255, 170, 170);
+}
+
+.cuatro {
+    background-color: rgb(255, 170, 170);
+}
+
+.cinco {
+    background-color: rgb(178, 182, 255);
+}
+
+.seis {
+    background-color: rgb(178, 182, 255);
+}
+
+@media screen and (width > 600px) {
+    .uno_dos {
+        flex-direction: row;
+        gap: 0;
+    }
+    .tres_seis {
+        flex-wrap: nowrap;
+    }
+    .cinco {
+        background-color: rgb(255, 170, 170);
+    }
+    .seis {
+        background-color: rgb(255, 170, 170);
+    }
+}

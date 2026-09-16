@@ -1,0 +1,62 @@
+.contenedor{
+    flex-direction: column-reverse;
+}
+
+.uno,.dos {
+    flex: 1;
+    background-color: rgb(174, 255, 187);
+}
+
+.tres,.cuatro {
+    flex: 1;
+    background-color: rgb(244, 253, 174);
+}
+
+.cinco {
+    flex: 1;
+    background-color: rgb(178, 182, 255);
+}
+.seis {
+    flex: 1;
+    background-color: rgb(255, 170, 170);
+}
+
+.uno_dos {
+    flex: 2;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.tres_cuatro{
+    flex: 1;
+    display: flex;
+}
+.cinco_seis{
+    flex: 4;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media screen and (width > 600px) {
+    .contenedor{
+        flex-direction: column;
+    }
+    .uno_dos {
+        flex:1;
+        flex-direction: row;
+    }
+    .tres_cuatro {
+        flex: 2;
+        flex-wrap: nowrap;
+    }
+    .cinco_seis {
+        flex: 1;
+        flex-direction: row;
+    }
+    .cinco {
+        background-color: rgb(255, 170, 170);
+    }
+    .seis{
+        background-color: rgb(178, 182, 255);
+    }
+}

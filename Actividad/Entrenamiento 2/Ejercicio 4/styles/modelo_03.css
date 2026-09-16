@@ -1,0 +1,54 @@
+.uno,
+.dos {
+    flex: 1;
+    background-color: rgb(174, 255, 187);
+}
+
+.tres,
+.cuatro {
+    flex: 1;
+    background-color: rgb(244, 253, 174);
+}
+
+.cinco {
+    flex: 1;
+    background-color: rgb(255, 170, 170);
+}
+
+.seis {
+    flex: 1;
+    background-color: rgb(178, 182, 255);
+}
+
+.dos,
+.cuatro,
+.cinco {
+    display: none;
+}
+
+.uno_dos,
+.tres_cuatro,
+.cinco_seis {
+    display: flex;
+    flex: 1;
+}
+
+@media screen and (width > 600px) {
+
+    /* .uno_dos {
+    }
+    .tres_cuatro {
+
+    }
+    .cinco_seis {
+
+    } */
+    .dos,
+    .cuatro,
+    .cinco {
+        display: block;
+    }
+    .uno,.tres,.cinco {
+        flex: 2;
+    }
+}
